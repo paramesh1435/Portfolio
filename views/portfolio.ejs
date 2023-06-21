@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgb(0, 0, 8);
+            color: white;
+            font-family: poppins;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(2, 2, 53);
+        }
+
+        header ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 10px 0 15px 25px;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header ul li a {
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        header ul li a:hover {
+            transform: translateY(10px);
+            color: lavender;
+        }
+
+        nav h1 {
+            margin: 10px;
+            text-shadow: 3px 3px 5px rgb(31, 31, 162);
+        }
+
+        section {
+            margin: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40vh;
+        }
+
+        img {
+            height: 200px;
+            width: 250px;
+            border-radius: 50%;
+        }
+
+        #Name {
+            color: rgb(104, 172, 231);
+        }
+
+        hr {
+            border: 1px solid lavender;
+        }
+
+        .left h1 {
+            font-size: 35px;
+        }
+
+        .right p {
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .right ul li {
+            font-size: 20px;
+            display: inline-block;
+            margin: 0 20px;
+            line-height: 1.5;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            font-size: 15px;
+            transition: transform 0.3s;
+        }
+
+
+        button:hover {
+            transform: scale(0.9, 0.9);
+        }
+
+        .skills {
+            height: 20vh;
+        }
+
+        ul>li>a {
+            color: white;
+            line-height: 1.5;
+            list-style-type: square;
+            font-size: 24px;
+            color: rgb(151, 151, 193);
+        }
+
+        ul>li>a:hover {
+            text-shadow: 3px 3px 5px solid white;
+            color: white;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgb(168, 153, 153);
+            color: black;
+        }
+
+        footer li {
+            list-style-type: none;
+            display: inline-block;
+            margin: auto 25px;
+            font-size: 30px;
+        }
+
+        footer li>a {
+            color: black;
+            transition: trasform 0.3s;
+        }
+
+        footer li>a:hover {
+            color: rgb(127, 49, 35);
+            transform: scale(1.1, 1.1);
+        }
+
+        footer input {
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 480px) {
+            footer {
+                height: 30vh;
+                display: block;
+                padding: 30px;
+                
+            }
+            footer input {
+            height: 30px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            }
+
+            footer li>a {
+            color: black;
+            transition: trasform 0.3s;
+            padding-left: 10px;
+            margin-top: 30px ;
+            }
+
+            #about {
+                height: 70vh;              
+            }
+
+            .right {
+                padding-left: 25px;
+            }
+
+            img {
+                height: 200px;
+                width: 200px;
+                padding-right: 30px;
+            }
+
+            .skills {
+                height: 45vh;
+                display: block;
+            }
+
+            .skills li{
+                display: block;
+                width: 10rem;
+            }
+
+            #projects {
+                height: 30vh;
+                padding:30px;
+                font-size: 13px;
+            }
+
+            #projects ul>li>a {
+                font-size: 20px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="leftSection">
+                <h1>MY &nbsp; PORTFOLIO</h1>
+            </div>
+            <div class="rightSection">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">My Webpages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="intro">
+
+            <div class="rightSide">
+                <img src="https://www.bing.com/th/id/OGC.0b83084213e65a2281ba365d963b7bea?pid=1.7&rurl=https%3a%2f%2fi.pinimg.com%2foriginals%2fba%2f9c%2fa1%2fba9ca1e81caf80f5540516e4e20df473.gif&ehk=FRj1dmiLwhu5y3FjMc8YZIzVj%2bZ%2frIAiHykA76Vl65k%3d"
+                    alt="">
+            </div>
+            <div class="leftSide">
+                <h1>My name is <span id="Name">B. Parameswara Reddy.</span><br>
+                    and Iam a <span id="element"></span><br><br>
+                    <button><a href="https://github.com/parameswarareddybandi">Visit GitHub</a></button>
+                </h1>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <div class="left">
+                <h1>About Me</h1>
+            </div>
+            <div class="right">
+                <p>My name is B.Parameswara Reddy. <br>
+                    Currently Iam pursuing B.Tech course in the stream <br>
+                    of Computer Science and Engineering.Below I mentioned<br>
+                    my skills, my projects and my contact details. Watch out those.</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="skills">
+            <div class="left">
+                <h1>Skills : </h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>BOOTSTRAP</li>
+                    <li>JQUERY</li>
+                    <li>NODEJS</li>
+                    <li>MONGODB</li>
+                    <li>PYTHON</li>
+                    <LI>JAVA</LI>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h1>Source codes are available in Github</h1>
+            <div class="leftpro">
+                <ul>
+                    <h3 style="border-bottom: 3px solid white; width: 80%;">Frontend : </h1><br>
+                        <li><a href="https://parameshb-game-112403.netlify.app/" target="_blank">Number Game</a></li>
+                        <li><a href="https://paramesh-leapyear-112403.netlify.app/" target="_blank">Leap Year</a></li>
+                        <li><a href="https://parameswarareddybandi.github.io/Travel-Blog/#about" target="_blank">Travel
+                                Blog</a></li>
+                        <li><a href="https://parameswarareddybandi.github.io/Gallery/" target="_blank">Gallery</a></li>
+                        <li><a href="https://parameswarareddybandi.github.io/Blog-Post/" target="_blank">Blog Post</a>
+                        </li>
+                        <li><a href="https://parameswarareddybandi.github.io/Registration-Form/"
+                                target="_blank">Registration Form</a></li>
+
+                </ul>
+            </div>
+            <div class="rightpro">
+                <ul>
+                    <h3 style="border-bottom: 3px solid white; width: 80%;">Full Stack :</h3><br>
+                    <li><a href="https://panicky-pink-turtleneck-shirt.cyclic.app/" target="_blank">Registration</a>
+                    </li>
+                    <li><a href="https://handsome-sneakers-tuna.cyclic.app/" target="_blank">Slam Book</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>
+            <div class="left">
+                <h1>My Portfolio</h1>
+            </div>
+
+            <div class="feedback">
+                <form action="/" method="post"><input type="textarea" name="feedback" size="50%"
+                        placeholder="Leave a message..." required>
+                    &nbsp; <input type="submit" value="Send"></form>
+            </div>
+            <div id="contact">
+                <li><a href="https://instagram.com/_mr.__insane_?igshid=MzNlNGNkZWQ4Mg==" class="fa fa-instagram"
+                        target="_blank"></a></li>
+                <li><a href="https://www.linkedin.com/in/bandi-parameswara-reddy-335906253" class="fa fa-linkedin"
+                        target="_blank"></a></li>
+                <li><a href="https://github.com/parameswarareddybandi" class="fa fa-github" target="_blank"></a></li>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Student in CMRIT college.', ' Full Stack Web Developer.'],
+            typeSpeed: 100,
+        });
+    </script>
+</body>
+
+</html>
